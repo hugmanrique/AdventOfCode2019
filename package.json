@@ -1,0 +1,10 @@
+{
+  "name": "@hugmanrique/aoc2019",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@hugmanrique/eslint-config": "^1.0.3",
+    "eslint": "^6.7.2",
+    "prettier": "^1.19.1"
+  }
+}
