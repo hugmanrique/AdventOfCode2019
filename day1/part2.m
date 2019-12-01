@@ -1,16 +1,13 @@
 clear;
 
 masses = getModuleMasses();
-totalFuel = 0;
+fuel = zeros(length(masses), 1);
 
-while sum(masses) > 0
-    % Compute required fuel for remaining mass
-    fuel = floor(masses / 3) - 2;
-    fuel = max(fuel, 0);
+while sum(masses) > 8
+    % Mass of fuel required for current mass
+    masses = max(floor(masses / 3) - 2, 0);
     
-    masses = fuel;
-    
-    totalFuel = totalFuel + sum(fuel);
+    fuel = fuel + masses;
 end
 
-fprintf('%d\n', totalFuel);
+fprintf('%d\n', sum(fuel));
