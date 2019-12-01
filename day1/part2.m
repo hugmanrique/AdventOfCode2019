@@ -1,6 +1,6 @@
 clear;
 
-masses = get_module_masses();
+masses = getModuleMasses();
 totalFuel = 0;
 
 while sum(masses) > 0

@@ -1,6 +1,6 @@
 clear;
 
-masses = get_module_masses();
+masses = getModuleMasses();
 
 fuel = floor(masses / 3) - 2;
 totalFuel = sum(fuel);

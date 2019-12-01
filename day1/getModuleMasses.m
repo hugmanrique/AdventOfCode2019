@@ -1,4 +1,4 @@
-function [masses] = get_module_masses()
+function [masses] = getModuleMasses()
 
 [fid, err] = fopen('input.txt');
 
